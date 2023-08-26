@@ -131,6 +131,6 @@ You'll need to create a data file to save the links. It should be under the `dat
 
 Then, on the page that you want to be a link list, add the following to the header:
 ```
-type = "link-list"
-linkListData = "linklist"
+type: "link-list"
+linkListData: "linklist"
 ```
