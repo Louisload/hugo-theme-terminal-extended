@@ -18,9 +18,9 @@
             <p>{{ .Content | safeHTML | markdownify }}</p>
         </div>
         {{ else if eq .Type "link" }}
-        <div class="linkContainer">
+        <div class="linkContainer {{.HtmlClasses}}">
             <a class="link" href="{{ .Link | absURL }}" {{ if .OpenNewTab }} target="_blank" {{ end }}>
-                <div class="linkIconContainer {{.HtmlClasses}}">
+                <div class="linkIconContainer">
                     <img class="icon" src="{{ .Icon | absURL }}" alt="{{ .AltText }}">
                 </div>
                 <p class="linkText">{{ .Content }}</p>
